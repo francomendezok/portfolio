@@ -6,3 +6,52 @@ body {
     font-family: Prociono;
     background-color: #282828;
 }
+
+.select-language {
+    background-color: transparent;
+    display: inline-flex;
+    padding: 17px 24px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #D2D2D2;
+    height: 1rem;
+}
+
+select, option {
+    font-family: Prociono;
+    height: 2rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    outline: none;
+    background-color: #282828;
+}
+
+.select-language img {
+    width: 25px;
+    height: 25px;
+}
+
+  h1 {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    border-right: 0.15em solid #18bdec;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+    text-align: center;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }

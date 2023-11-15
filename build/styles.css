@@ -521,15 +521,6 @@ video {
 .fixed {
   position: fixed;
 }
-.relative {
-  position: relative;
-}
-.bottom-72 {
-  bottom: 18rem;
-}
-.left-24 {
-  left: 6rem;
-}
 .mt-4 {
   margin-top: 1rem;
 }
@@ -551,10 +542,6 @@ video {
 .w-screen {
   width: 100vw;
 }
-.-translate-x-28 {
-  --tw-translate-x: -7rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
 .translate-x-28 {
   --tw-translate-x: 7rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -571,25 +558,11 @@ video {
 .justify-evenly {
   justify-content: space-evenly;
 }
-.border-4 {
-  border-width: 4px;
-}
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
 .bg-transparent {
   background-color: transparent;
 }
 .bg-cover {
   background-size: cover;
-}
-.bg-contain {
-  background-size: contain;
 }
 .bg-center {
   background-position: center;
@@ -609,10 +582,6 @@ video {
   font-size: 6rem;
   line-height: 1;
 }
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
 .text-slate-200 {
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
@@ -622,3 +591,52 @@ body {
     font-family: Prociono;
     background-color: #282828;
 }
+
+.select-language {
+    background-color: transparent;
+    display: inline-flex;
+    padding: 17px 24px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #D2D2D2;
+    height: 1rem;
+}
+
+select, option {
+    font-family: Prociono;
+    height: 2rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    outline: none;
+    background-color: #282828;
+}
+
+.select-language img {
+    width: 25px;
+    height: 25px;
+}
+
+  h1 {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    border-right: 0.15em solid #18bdec;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+    text-align: center;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
