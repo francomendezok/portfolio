@@ -10,12 +10,12 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Prociono&family=Urbanist&display=swap');</style>
 </head>
 <body class="text-slate-200 overflow-x-hidden flex flex-col items-center ">
-    <header class="mt-5 h-1/4 bg-transparent fixed w-screen">
-        <nav class="text-3xl w-screen h-screen flex justify-evenly align-middle">
-            <a class="transform hover:scale-105 transition-transform ease-in-out duration-300" href="#home">Home</a>
-            <a class="transform hover:scale-105 transition-transform ease-in-out duration-300" href="#about">About</a>
-            <a class="transform hover:scale-105 transition-transform ease-in-out duration-300" href="#projects">Projects</a>
-            <a class="transform hover:scale-105 transition-transform ease-in-out duration-300" href="#contact">Contact</a>
+    <header class="relative mt-5 h-1/4 bg-transparent w-screen">
+        <nav class="text-3xl w-screen fixed flex justify-evenly align-middle">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
             <div class="select-language">
                 <img id="flag" src="../images/uk.png" alt="Language Flag">
                 <select class="text-slate-200 bg-transparent" name="language" id="language">
@@ -31,16 +31,25 @@
             <h2 class="absolute bottom-24 right-20 text-5xl">WEB DEVELOPER</h2>
             <img src="../images/giphy-round.gif" alt="" class="absolute -z-10 bottom-4 h-3/4">
     </main>
-    <section id="about">
-        <img src="../images/ornament_-_09.jpg" alt="" class="w-1/2 h-1/2">
-        <div>
-            <h3>About me & Technologies</h3>
-            <img src="../images/profile.jpg" alt="" class="rounded-full w-40 h-40">
+    <section id="about" class="pt-20 flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center">
+            <div class="flex items-center justify-evenly">
+                <div class="flex flex-col items-center">
+                    <h3 class="mb-4 text-center text-slate-300 text-5xl">I am Franco!</h3>
+                    <img src="../images/profile.jpg" alt="" class="mb-4 rounded-full w-40 h-40">
+                </div>
+                <div class="w-3/4 text-left text-slate-300 text-2xl">
+                    <p>I am a Front-End Developer from <span style="color: #18bdec; font-weight: 500;">Argentina</span> who loves to learn and create with new technologies.</p>
+                    <p class="pt-4">My focus is <span style="color: #18bdec; font-weight: 500;">Business</span> and <span style="color: #18bdec; font-weight: 500;">Marketing-driven,</span> so I can help your Business with a new <span style="color: #18bdec; font-weight: 500;">Website</span>, Landing page, Form, or interface that you might need to implement.</p>
+                    <p class="pt-4">Also, I know the importance of a <span style="color: #18bdec; font-weight: 500;">Great Design</span>, fast and <span style="color: #18bdec; font-weight: 500;">Responsive Website</span> and good <span style="color: #18bdec; font-weight: 500;">SEO</span>.</p>
+                    <p class="pt-4">I find coding to be a useful tool for providing clients with the right <span style="color: #18bdec; font-weight: 500;">solutions</span> to their problems. My focus is always on creating a better <span style="color: #18bdec; font-weight: 500;">User Experience</span> above all.</p>
+                </div>
+            </div>
+            <div>
+                <p>Text about technologies</p>
+                <div>Carrousel of technologies</div>
+            </div>
         </div>
-        <div>
-            <p>Text about technologies</p>
-        </div>
-        <div>Carrousel of technologies</div>
     </section>
     <section id="projects">
         <div>
@@ -104,6 +113,7 @@
         </div> 
     </section>
     <section id="contact">
+        <img class="relative -z-50" src="../images/vector.jpg" alt="" style="height: 150vh;">
         <h3>Contact</h3>
         <div>
             <div><img src="" alt=""><a href="">Twitter</a></div>
