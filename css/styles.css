@@ -65,3 +65,7 @@ select, option {
     width: 75vw;
     height: 50vh;
   }
+
+  a, .social {
+    cursor: pointer;
+  }
