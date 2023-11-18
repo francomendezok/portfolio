@@ -4,8 +4,8 @@
 
 body {
     font-family: Prociono;
-    /* background-color: #282828; */
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 .select-language {
