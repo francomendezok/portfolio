@@ -6,6 +6,7 @@
     <title>Franco Mendez</title>
     <link rel="shortcut icon" href="../images/profile-pic.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
     <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Urbanist&display=swap');</style>
     <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Prociono&family=Urbanist&display=swap');</style>
 </head>
@@ -46,7 +47,7 @@
                 </div>
             </div>
             <div>
-                <p class="text-center text-slate-300 text-5xl mt-16">SKILLS</p>
+                <p class="text-center text-slate-300 text-5xl mt-16">Skills</p>
                 <div id="skills" class="flex items-center justify-evenly">
                     <div class="rounded-2xl h-40 w-40">
                         <img src="../images/js.png" alt="">
@@ -69,94 +70,94 @@
         </div>
     </section>
     <section id="projects">
-        <img class="relative -z-50" src="../images/test.webp" alt="" style="height: 100vh; width: 100vw;">
-        <div class="pb-32 flex items-center justify-center text-5xl text-slate-300">
+        <div class="flex items-center justify-center text-5xl text-slate-300">
             <h3>Projects</h3>
         </div>
-        <div class="slider">
-            <span style="--i:1"><img src="../images/projects/battleship.png" alt=""></span>
-            <span style="--i:2"><img src="../images/projects/etch.png" alt=""></span>
-            <span style="--i:3"><img src="../images/projects/hazlo.png" alt=""></span>
-            <span style="--i:4"><img src="../images/projects/prode.png" alt=""></span>
-            <span style="--i:5"><img src="../images/projects/nocode.png" alt=""></span>
-            <span style="--i:6"><img src="../images/projects/landing.png" alt=""></span>
-            <span style="--i:7"><img src="../images/projects/weather.png" alt=""></span>
-            <span style="--i:8"><img src="../images/projects/oblivion.png" alt=""></span>
+        <img class="relative -z-50" src="../images/test.webp" alt="" style="height: 100vh; width: 100vw;">
+        <div id="my-project">
+            <img id="my-img" src="" alt="">
+            <div>
+                <p id="my-title"></p>
+                <a id="live-repo" target="_blank" href=""></a>
+                <a id="live-web" target="_blank" href=""></a>
+            </div>
         </div>
-        <!-- <div id="container" class="flex">
-            <div>
-                <div>
-                    <img src="../images/projects/battleship.png" alt="">
+        <div class="flex justify-center items-center mt-4">
+            <input data-number="0" name="selected" type="radio">
+            <input data-number="1" name="selected" type="radio">
+            <input data-number="2" name="selected" type="radio">
+            <input data-number="3" name="selected" type="radio">
+            <input data-number="4" name="selected" type="radio">
+            <input data-number="5" name="selected" type="radio">
+            <input data-number="6" name="selected" type="radio">
+            <input data-number="7" name="selected" type="radio">
+        </div>
+            <!-- <div class="slider">
                     <div>
-                        <h4>Battleship</h4>
-                        <p>Project 1</p>
-                        <a href=""></a><a href=""></a></div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../images/projects/etch.png" alt="">
+                        <img src="../images/projects/battleship.png" alt="">
+                        <div>
+                            <p>Battleship</p>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
                     <div>
-                        <h4>Etch</h4>
-                        <p>Project 2</p>
-                        <a href=""></a><a href=""></a></div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../images/projects/hazlo.png" alt="">
+                        <img src="../images/projects/etch.png" alt="">
+                        <div>
+                            <p>Etch A Sketch</p>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
                     <div>
-                        <h4>To Do List</h4>
-                        <p>Project 3</p>
-                        <a href=""></a><a href=""></a></div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../images/projects/prode.png" alt="">
+                        <img src="../images/projects/hazlo.png" alt="">
+                        <div>
+                            <p>Hazlo To Do List</p>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
                     <div>
-                        <h4>Prode App</h4>
-                        <p>Project 4</p>
-                        <a href=""></a><a href=""></a></div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../images/projects/nocode.png" alt="">
+                        <img src="../images/projects/prode.png" alt="">
+                        <div>
+                            <p>Prode</p>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
                     <div>
-                        <h4>No Code Builder</h4>
-                        <p>Project 5</p>
-                        <a href=""></a><a href=""></a></div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../images/projects/landing.png" alt="">
+                        <img src="../images/projects/nocode.png" alt="">
+                        <div>
+                            <p>No Code Builder</p>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
                     <div>
-                        <h4>Landing Page</h4>
-                        <p>Project 6</p>
-                        <a href=""></a><a href=""></a></div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../images/projects/weather.png" alt="">
+                        <img src="../images/projects/landing.png" alt="">
+                        <div>
+                            <p>Landing Page</p>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
                     <div>
-                        <h4>Weather App</h4>
-                        <p>Project 7</p>
-                        <a href=""></a><a href=""></a></div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../images/projects/oblivion.png" alt="">
+                        <img src="../images/projects/weather.png" alt="">
+                        <div>
+                            <p>Weather App</p>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
                     <div>
-                        <h4>Oblivion Restaurant</h4>
-                        <p>Project 8</p>
-                        <a href=""></a><a href=""></a></div>
-                </div>
-            </div>
-        </div>  -->
+                        <img src="../images/projects/oblivion.png" alt="">
+                        <div>
+                            <p>Oblivion Restuarant</p>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
+            </div> -->
     </section>
     <section id="contact" class="flex flex-col items-center text-center w-screen h-96">
         <div class="pt-20 h-screen w-screen flex flex-col items-center">
@@ -177,7 +178,8 @@
 <!-- TODO
     1. Scroll behavior when clicked on A. 
     2. Mouse over and left a cyan spiral over the screen.
-    3. Projets Section 3D carrousel.
+
+    3. Projets Section Slider.
     4. Text Animations.
-    5. Project links.
+    5. Language Selection.
 -->
