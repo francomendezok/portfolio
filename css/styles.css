@@ -86,7 +86,37 @@ select, option {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
-  height: 45%;
-  border: 2px solid white;
+  width: 50%;
+  height: 50%;
 }
+
+#live-repo::after, #live-web::after {
+  content: ' ↗'; 
+}
+
+#live-repo:hover, #live-web:hover {
+  transform: scale(1.05);
+}
+
+input[type="radio"]:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.social-box img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+option, select {
+  cursor: pointer;
+}
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
