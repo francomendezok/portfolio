@@ -13,15 +13,15 @@
 <body class="text-slate-200 overflow-x-hidden flex flex-col items-center ">
     <header class="relative mt-5 h-1/4 bg-transparent w-screen">
         <nav class="text-3xl w-screen fixed flex justify-evenly align-middle">
-            <a class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#home">Home</a>
-            <a class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#about">About</a>
-            <a class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#projects">Projects</a>
-            <a class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#contact">Contact</a>
+            <a id="text-home" class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#home">Home</a>
+            <a id="text-about" class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#about">About</a>
+            <a id="text-projects" class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#projects">Projects</a>
+            <a id="text-contact" class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#contact">Contact</a>
             <div class="select-language">
-                <img id="flag" src="../images/uk.png" alt="Language Flag">
-                <select class="text-slate-200 bg-transparent" name="language" id="language">
-                    <option class="text-slate-200" value="EN">English</option>
-                    <option class="text-slate-200" value="SP">Español</option>
+                <img id="flag" src="../images/usa.png" alt="Language Flag">
+                <select id="select-flag" class="text-slate-200 bg-transparent" name="language" id="language">
+                    <option id="english" class="text-slate-200" value="EN">English</option>
+                    <option id="spanish" class="text-slate-200" value="SP">Spanish</option>
                 </select>
             </div>
         </nav>
@@ -29,39 +29,39 @@
     <main id="home" class="bg-center bg-cover h-screen w-screen flex items-center justify-center overflow-x-hidden"> 
         <div class="flex flex-col items-center justify-evenly w-3/4 h-3/4">
             <h1 class="absolute top-20 -translate-x-28 text-7xl">FRANCO MENDEZ</h1>
-            <h2 class="absolute bottom-24 right-20 text-5xl">WEB DEVELOPER</h2>
+            <h2 id="web-developer" class="absolute bottom-24 right-20 text-5xl">WEB DEVELOPER</h2>
             <img src="../images/giphy-round.gif" alt="" class="absolute -z-10 bottom-4 h-3/4">
     </main>
     <section id="about" class="pt-20 flex flex-col items-center justify-center">
         <div class="flex flex-col items-center justify-evenly">
             <div class="flex items-center justify-evenly">
                 <div class="flex flex-col items-center">
-                    <h3 class="mb-4 text-center text-slate-300 text-5xl">I am Franco!</h3>
+                    <h3 id="text-title" class="mb-4 text-center text-slate-300 text-5xl">I am Franco!</h3>
                     <img src="../images/profile-pic.png" alt="" class="mb-4 rounded-full w-44 h-44">
                 </div>
                 <div class="w-3/4 text-left text-slate-300 text-2xl">
-                    <p>I am a Front-End Developer from <span style="color: #18bdec; font-weight: 500;">Argentina</span> who loves to learn and create with new technologies.</p>
-                    <p class="pt-4">My focus is <span style="color: #18bdec; font-weight: 500;">Business</span> and <span style="color: #18bdec; font-weight: 500;">Marketing-driven,</span> so I can help your Business with a new <span style="color: #18bdec; font-weight: 500;">Website</span>, Landing page, Form, or interface that you might need to implement.</p>
-                    <p class="pt-4">Also, I know the importance of a <span style="color: #18bdec; font-weight: 500;">Great Design</span>, fast and <span style="color: #18bdec; font-weight: 500;">Responsive Website</span> and good <span style="color: #18bdec; font-weight: 500;">SEO</span>.</p>
-                    <p class="pt-4">I find coding to be a useful tool for providing clients with the right <span style="color: #18bdec; font-weight: 500;">solutions</span> to their problems. My focus is always on creating a better <span style="color: #18bdec; font-weight: 500;">User Experience</span> above all.</p>
+                    <p id="text-p-1">I am a Front-End Developer from <span style="color: #18bdec; font-weight: 500;">Argentina</span> who loves to learn and create with new technologies.</p>
+                    <p id="text-p-2" class="pt-4">My focus is <span style="color: #18bdec; font-weight: 500;">Business</span> and <span style="color: #18bdec; font-weight: 500;">Marketing-driven,</span> so I can help your Business with a new <span style="color: #18bdec; font-weight: 500;">Website</span>, Landing page, Form, or interface that you might need to implement.</p>
+                    <p id="text-p-3" class="pt-4">Also, I know the importance of a <span style="color: #18bdec; font-weight: 500;">Great Design</span>, fast and <span style="color: #18bdec; font-weight: 500;">Responsive Website</span> and good <span style="color: #18bdec; font-weight: 500;">SEO</span>.</p>
+                    <p id="text-p-4" class="pt-4">I find coding to be a useful tool for providing clients with the right <span style="color: #18bdec; font-weight: 500;">solutions</span> to their problems. My focus is always on creating a better <span style="color: #18bdec; font-weight: 500;">User Experience</span> above all.</p>
                 </div>
             </div>
             <div>
-                <p class="text-center text-slate-300 text-5xl mt-16">Skills</p>
+                <p id="p-skills" class="text-center text-slate-300 text-5xl -mb-20 mt-12">Skills</p>
                 <div id="skills" class="flex items-center justify-evenly">
-                    <div class="rounded-2xl h-40 w-40">
+                    <div class="rounded-2xl h-40 w-40 transform hover:scale-105 ease-in-out cursor-pointer hover:rotate-6">
                         <img src="../images/js.png" alt="">
                         <p class="text-center text-slate-300 mt-4">JAVASCRIPT</p>
                     </div>
-                    <div class="rounded-2xl h-40 w-40">
+                    <div class="rounded-2xl h-40 w-40 transform hover:scale-105 ease-in-out cursor-pointer hover:rotate-6">
                         <img src="../images/html.png" alt="">
                         <p class="text-center text-slate-300 mt-4">HTML</p>
                     </div>
-                    <div class="rounded-2xl h-40 w-40">
+                    <div class="rounded-2xl h-40 w-40 transform hover:scale-105 ease-in-out cursor-pointer hover:rotate-6">
                         <img src="../images/css.png" alt="">
                         <p class="text-center text-slate-300 mt-4">CSS</p>
                     </div>
-                    <div class="rounded-2xl h-40 w-40">
+                    <div class="rounded-2xl h-40 w-40 transform hover:scale-105 ease-in-out cursor-pointer hover:rotate-6">
                         <img src="../images/tailwindcss.png" alt="">
                         <p class="text-center text-slate-300 mt-4">TAILWIND CSS</p>
                     </div>
@@ -70,16 +70,18 @@
         </div>
     </section>
     <section id="projects">
-        <div class="flex items-center justify-center text-5xl text-slate-300">
-            <h3>Projects</h3>
+        <div class="flex items-center justify-center text-5xl text-slate-300 mt-24">
+            <h3 id="p-projects">Projects</h3>
         </div>
         <img class="relative -z-50" src="../images/test.webp" alt="" style="height: 100vh; width: 100vw;">
-        <div id="my-project">
-            <img id="my-img" src="" alt="">
+        <div id="my-project" class="flex flex-col items-center justify-center text-center">
+            <img class="rounded-3xl border-2 border-slate-300" id="my-img" src="" alt="">
             <div>
-                <p id="my-title"></p>
-                <a id="live-repo" target="_blank" href=""></a>
-                <a id="live-web" target="_blank" href=""></a>
+                <p class="text-slate-300 text-4xl mt-4 mb-2" id="my-title"></p>
+                <div class="w-96 flex justify-evenly text-slate-300 text-2xl">
+                    <a id="live-repo" target="_blank" href="">Live Repo</a>
+                    <a id="live-web" target="_blank" href="">View Project</a>
+                </div>
             </div>
         </div>
         <div class="flex justify-center items-center mt-4">
@@ -90,83 +92,24 @@
             <input data-number="4" name="selected" type="radio">
             <input data-number="5" name="selected" type="radio">
             <input data-number="6" name="selected" type="radio">
-            <input data-number="7" name="selected" type="radio">
         </div>
-            <!-- <div class="slider">
-                    <div>
-                        <img src="../images/projects/battleship.png" alt="">
-                        <div>
-                            <p>Battleship</p>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../images/projects/etch.png" alt="">
-                        <div>
-                            <p>Etch A Sketch</p>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../images/projects/hazlo.png" alt="">
-                        <div>
-                            <p>Hazlo To Do List</p>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../images/projects/prode.png" alt="">
-                        <div>
-                            <p>Prode</p>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../images/projects/nocode.png" alt="">
-                        <div>
-                            <p>No Code Builder</p>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../images/projects/landing.png" alt="">
-                        <div>
-                            <p>Landing Page</p>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../images/projects/weather.png" alt="">
-                        <div>
-                            <p>Weather App</p>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../images/projects/oblivion.png" alt="">
-                        <div>
-                            <p>Oblivion Restuarant</p>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-            </div> -->
     </section>
     <section id="contact" class="flex flex-col items-center text-center w-screen h-96">
         <div class="pt-20 h-screen w-screen flex flex-col items-center">
-            <h3 class="text-5xl">CONTACT</h3>
-            <div class="w-3/4 flex">
-                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center w-screen justify-evenly mt-8 text-right text-slate-300 text-4xl"><img class="social w-20 h-20" src="../images/Twitter_white.png" alt=""><a target="_blank" href="https://twitter.com/francomendezok">Twitter</a></div>
-                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center w-screen justify-evenly mt-8 text-right text-slate-300 text-4xl"><img class="social w-20 h-20" src="../images/LinkedIN_white.png" alt=""><a target="_blank" href="https://linkedin.com/in/franco-mendez-a462b7235">Linkedin</a></div>
-                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center w-screen justify-evenly mt-8 text-right text-slate-300 text-4xl"><img class="social w-20 h-20" src="../images/Github_white.png" alt=""><a target="_blank" href="https://github.com/francomendezok">Github</a></div>
-                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center w-screen justify-evenly mt-8 text-right text-slate-300 text-4xl"><img class="social w-20 h-20" src="../images/Gmail_white.png" alt=""><a target="_blank" href="mailto:francomendezok@gmail.com">Email</a></div>
+            <h3 id="text-contact-h3" class="text-5xl">Contact</h3>
+            <div class="w-3/4 flex social-box">
+                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center w-screen justify-evenly mt-8 text-center text-slate-300 text-4xl">
+                    <a target="_blank" href="https://twitter.com/francomendezok"><img class="social w-20 h-20" src="../images/Twitter_white.png" alt="">Twitter</a>
+                </div>
+                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center w-screen justify-evenly mt-8 text-center text-slate-300 text-4xl">
+                    <a target="_blank" href="https://linkedin.com/in/franco-mendez-a462b7235"><img class="social w-20 h-20" src="../images/LinkedIN_white.png" alt="">Linkedin</a>
+                </div>
+                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center w-screen justify-evenly mt-8 text-center text-slate-300 text-4xl">
+                    <a target="_blank" href="https://github.com/francomendezok"><img class="social w-20 h-20" src="../images/Github_white.png" alt="">Github</a>
+                </div>
+                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center w-screen justify-evenly mt-8 text-center text-slate-300 text-4xl">
+                    <a target="_blank" href="mailto:francomendezok@gmail.com"><img class="social w-20 h-20" src="../images/Gmail_white.png" alt="">Email</a>
+                </div>
             </div>
             <p class="mt-12 mb-4 text-2xl text-slate-300"><span class="text-3xl">2023</span> Franco Mendez</p>
         </div>
@@ -176,10 +119,11 @@
 
 
 <!-- TODO
-    1. Scroll behavior when clicked on A. 
-    2. Mouse over and left a cyan spiral over the screen.
+    1. Language Selection presentation parragraph.
+    2. Zoom Lupa Image Project
 
-    3. Projets Section Slider.
-    4. Text Animations.
-    5. Language Selection.
+/////////////////////////////////////////////////
+    1. Mouse over and left a cyan spiral over the screen.
+    2. Media Query
+    3. Images inside build folder
 -->
