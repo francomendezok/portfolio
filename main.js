@@ -87,8 +87,8 @@ const spanish = document.getElementById('spanish');
 const flag = document.getElementById('flag');
 
 selectFlag.addEventListener('change', () => {
-    if (selectFlag.value === 'EN') flag.src = '../images/usa.png';
-    if (selectFlag.value === 'SP') flag.src = '../images/arg.png';
+    if (selectFlag.value === 'EN') flag.src = './images/usa.png';
+    if (selectFlag.value === 'SP') flag.src = './images/arg.png';
     translate();
 })
 
@@ -109,6 +109,8 @@ function translate () {
     const textP3 = document.getElementById('text-p-3');
     const textP4 = document.getElementById('text-p-4');
 
+
+
     const skillsText = document.getElementById('p-skills');
 
     const projectsText = document.getElementById('p-projects');
@@ -128,7 +130,10 @@ function translate () {
     webDeveloper.textContent === "WEB DEVELOPER" ? webDeveloper.textContent = "DESARROLLADOR WEB" : webDeveloper.textContent = "WEB DEVELOPER";
 
     presentation.textContent === "I am Franco!" ? presentation.textContent = "Soy Franco!" : presentation.textContent = "I am Franco!";
-    // textP1.innerHTML === "I am a Front-End Developer from who loves to learn and create with new technologies." ? textP1.innerHTML = "Test" : textP1.innerHTML = "I am a Front-End Developer from who loves to learn and create with new technologies.";
+    textP1.innerHTML === `I am a Front-End Developer from <span id="text-span-1" style="color: #18bdec; font-weight: 500;">Argentina</span> who loves to learn and create with new technologies.` ? textP1.innerHTML = `Soy un Desarrollador Front-End <span style="color: #18bdec; font-weight: 500;">Argentino</span>. Me encanta aprender y crear con nuevas tecnologías.` : textP1.innerHTML = `I am a Front-End Developer from <span id="text-span-1" style="color: #18bdec; font-weight: 500;">Argentina</span> who loves to learn and create with new technologies.`;
+    textP2.innerHTML === `My focus is <span id="text-span-2" style="color: #18bdec; font-weight: 500;">Business</span> and <span id="text-span-3" style="color: #18bdec; font-weight: 500;">Marketing-driven,</span> so I can help your Business with a new <span id="text-span-4" style="color: #18bdec; font-weight: 500;">Website</span>, Landing page, Form, or interface that you might need to implement.` ? textP2.innerHTML = `Mi enfoque es impulsado por <span style="color: #18bdec; font-weight: 500;">Negocios</span> y <span style="color: #18bdec; font-weight: 500;">Marketing,</span> así que puedo ayudar a tu negocio con un nuevo <span style="color: #18bdec; font-weight: 500;">Sitio web</span>, Página de aterrizaje, Formulario o interfaz que puedas necesitar implementar.` : textP2.innerHTML = `My focus is <span id="text-span-2" style="color: #18bdec; font-weight: 500;">Business</span> and <span id="text-span-3" style="color: #18bdec; font-weight: 500;">Marketing-driven,</span> so I can help your Business with a new <span id="text-span-4" style="color: #18bdec; font-weight: 500;">Website</span>, Landing page, Form, or interface that you might need to implement.`; 
+    textP3.innerHTML === `Also, I know the importance of a <span id="text-span-5" style="color: #18bdec; font-weight: 500;">Great Design</span>, fast and <span id="text-span-6" style="color: #18bdec; font-weight: 500;">Responsive Website</span> and good <span id="text-span-7" style="color: #18bdec; font-weight: 500;">SEO</span>.` ? textP3.innerHTML = `Además, entiendo la importancia de un <span style="color: #18bdec; font-weight: 500;">Gran diseño</span>, un sitio web rápido y <span style="color: #18bdec; font-weight: 500;">Responsivo</span> y un buen <span style="color: #18bdec; font-weight: 500;">SEO</span>.` : textP3.innerHTML = `Also, I know the importance of a <span id="text-span-5" style="color: #18bdec; font-weight: 500;">Great Design</span>, fast and <span id="text-span-6" style="color: #18bdec; font-weight: 500;">Responsive Website</span> and good <span id="text-span-7" style="color: #18bdec; font-weight: 500;">SEO</span>.`;
+    textP4.innerHTML === `I find coding to be a useful tool for providing clients with the right <span id="text-span-8" style="color: #18bdec; font-weight: 500;">solutions</span> to their problems. My focus is always on creating a better <span id="text-span-9" style="color: #18bdec; font-weight: 500;">User Experience</span> above all.` ? textP4.innerHTML = `Encuentro que la codificación es una herramienta útil para proporcionar a los clientes las <span style="color: #18bdec; font-weight: 500;">soluciones</span> adecuadas a sus problemas. Mi enfoque siempre está en crear una mejor <span style="color: #18bdec; font-weight: 500;">Experiencia de usuario</span> sobre todo.` : textP4.innerHTML = `I find coding to be a useful tool for providing clients with the right <span id="text-span-8" style="color: #18bdec; font-weight: 500;">solutions</span> to their problems. My focus is always on creating a better <span id="text-span-9" style="color: #18bdec; font-weight: 500;">User Experience</span> above all.`;
 
     skillsText.textContent === "Skills" ? skillsText.textContent = "Habilidades" : skillsText.textContent = "Skills";
     
@@ -141,3 +146,4 @@ function translate () {
 }
 
 firstInput.click();
+
