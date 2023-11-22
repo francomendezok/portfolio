@@ -1,7 +1,7 @@
 const images = {
     0: 
     {   
-        src: '../images/projects/nocode.png',
+        src: './images/projects/nocode.png',
         title: 'No Code Builder',
         repo: 'https://github.com/francomendezok/no-code-registration-form',
         web: 'https://francomendezok.github.io/no-code-registration-form',
@@ -9,7 +9,7 @@ const images = {
     },
     1: 
     {
-        src: '../images/projects/etch.png',
+        src: './images/projects/etch.png',
         title: 'Etch A Sketch',
         repo: 'https://github.com/francomendezok/Etch-A-Sketch',
         web: 'https://francomendezok.github.io/Etch-A-Sketch/',
@@ -17,7 +17,7 @@ const images = {
     },
     2: 
     {
-        src: '../images/projects/hazlo.png',
+        src: './images/projects/hazlo.png',
         title: 'Hazlo ToDo List',
         repo: 'https://github.com/francomendezok/hazlo-todo-list',
         web: 'https://francomendezok.github.io/hazlo-todo-list/',
@@ -25,7 +25,7 @@ const images = {
     },
     3: 
     {
-        src: '../images/projects/prode.png',
+        src: './images/projects/prode.png',
         title: 'Prode App',
         repo: 'https://github.com/francomendezok/Prode-Sign-Up-Form',
         web: 'https://francomendezok.github.io/Prode-Sign-Up-Form/',
@@ -33,7 +33,7 @@ const images = {
     },
     4: 
     {
-        src: '../images/projects/battleship.png',
+        src: './images/projects/battleship.png',
         title: 'Battleship',
         repo: 'https://github.com/francomendezok/battleship',
         web: 'https://francomendezok.github.io/battleship/',
@@ -41,7 +41,7 @@ const images = {
     },
     5: 
     {
-        src: '../images/projects/weather.png',
+        src: './images/projects/weather.png',
         title: 'Weather App',
         repo: 'https://github.com/francomendezok/weather',
         web: 'https://francomendezok.github.io/weather/',
@@ -49,7 +49,7 @@ const images = {
     },
     6: 
     {
-        src: '../images/projects/oblivion.png',
+        src: './images/projects/oblivion.png',
         title: 'Oblivion Restaurant',
         repo: 'https://github.com/francomendezok/restaurant-menu',
         web: 'https://francomendezok.github.io/restaurant-menu/',
