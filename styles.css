@@ -689,7 +689,6 @@ video {
 body {
     font-family: Prociono;
     background-color: black;
-    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
@@ -811,13 +810,13 @@ option, select {
   }
   
   nav {
-    font-size: 1rem !important;
+    font-size: .8rem !important;
   }
 
   .select-language {
     background-color: transparent;
     display: inline-flex;
-    padding: 10px 12px;
+    padding: 8px 8px;
     flex-direction: row;
     align-items: center;
     gap: 10px;
@@ -826,18 +825,23 @@ option, select {
     height: 0.6rem;
     position: relative;
     left: 0px;
-    top: 7px;
+    top: 0rem;
 }
 
 .select-language img {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
+}
+
+#gif {
+  width: 75%;
+  height: 75%;
 }
 
 select, option {
   font-family: Prociono;
   height: 2rem;
-  font-size: 1rem;
+  font-size: .7rem;
   background-color: transparent;
   outline: none;
   background-color: #282828;
@@ -850,16 +854,16 @@ main {
 h1 {
   position: absolute;
   top: 2rem;
-  right: -5rem;
-  font-size: 2rem !important;
+  right: -6rem;
+  font-size: 1.5rem !important;
 }
 
 #web-developer {
   position: absolute;
-  top: 36rem;
-  left: 7rem;
+  top: 38rem;
+  left: 5rem;
   width: 100%;
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
 }
 
 #inner-div {
@@ -868,7 +872,7 @@ h1 {
 }
 
 #text-title {
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -881,7 +885,7 @@ h1 {
 
 #p-skills {
   font-size: 2rem;
-  margin-bottom: 0.1rem;
+  margin-bottom: 4rem;
 }
 
 #skills img{
@@ -890,28 +894,47 @@ h1 {
 }
 
 #skills {
-  width: 90vw;
+  width: 80vw;
+  height: 100vh;
   margin-bottom: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 #skills div{
   width: 100%;
+  height: 50%;
   text-align: center !important;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 #p-projects {
+  position: relative;
+  bottom: 4rem;
   font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+#blue-bgc {
+  display: none;
 }
 
 #text-and-links {
   display: flex;
   flex-direction: column;
-  place-items: center;
+  margin-left: 1rem;
   margin-top: 0;
+}
+
+#projects {
+  background-image: url('../build/images/test.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 150%;
 }
 
 #my-project {
@@ -920,9 +943,8 @@ h1 {
   align-items: center;
   justify-content: space-evenly;
   width: 90vw;
-  height: 90vh;
+  height: 70vh;
   margin: auto;
-
 }
 
 #my-title {
@@ -931,7 +953,7 @@ h1 {
 }
 
 #text-contact-h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #social-icons {
@@ -969,12 +991,17 @@ h1 {
     height: 0.6rem;
     position: relative;
     left: 0px;
-    top: 7px;
+    top: 0rem;
 }
 
 .select-language img {
   width: 15px;
   height: 15px;
+}
+
+#gif {
+  width: 75%;
+  height: 75%;
 }
 
 select, option {
@@ -999,7 +1026,7 @@ h1 {
 
 #web-developer {
   position: absolute;
-  top: 36rem;
+  top: 38rem;
   left: 7rem;
   width: 100%;
   font-size: 1.5rem !important;
@@ -1037,6 +1064,7 @@ h1 {
   margin-bottom: 0;
 }
 #skills div{
+  margin-left: 1rem;
   width: 100%;
   text-align: center !important;
   display: flex;
@@ -1047,7 +1075,14 @@ h1 {
 }
 
 #p-projects {
+  position: relative;
+  bottom: 3rem;
   font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+#blue-bgc {
+  display: none;
 }
 
 #text-and-links {
@@ -1055,6 +1090,14 @@ h1 {
   flex-direction: column;
   place-items: center;
   margin-top: 0;
+}
+
+#projects {
+  background-image: url('../build/images/test.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 150%;
 }
 
 #my-project {
@@ -1065,7 +1108,173 @@ h1 {
   width: 90vw;
   height: 90vh;
   margin: auto;
+}
 
+#my-title {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+#text-contact-h3 {
+  font-size: 2rem;
+}
+
+#social-icons {
+  width: 90vw;
+}
+
+#social-icons div a img {
+  width: 3rem;
+  height: 3rem;
+}
+
+#social-icons div a {
+  font-size: 1rem;
+}
+}
+
+@media (min-width: 451px) and (max-width: 600px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  nav {
+    font-size: 1rem !important;
+  }
+
+  nav a {
+    margin-right: 4rem;
+  }
+
+  .select-language {
+    background-color: transparent;
+    display: inline-flex;
+    padding: 12px 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #D2D2D2;
+    height: 0.6rem;
+    position: relative;
+    left: -4rem;
+    top: 0rem;
+}
+
+.select-language img {
+  width: 12px;
+  height: 12px;
+}
+
+#gif {
+  width: 75%;
+  height: 75%;
+}
+
+select, option {
+  font-family: Prociono;
+  height: 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  background-color: #282828;
+}
+
+main {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  position: absolute;
+  top: 2rem;
+  right: -5rem;
+  font-size: 2rem !important;
+}
+
+#web-developer {
+  position: absolute;
+  top: 38rem;
+  left: 7rem;
+  width: 100%;
+  font-size: 1.5rem !important;
+}
+
+#inner-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#text-title {
+  font-size: 2rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#presentation-div {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#p-skills {
+  font-size: 2rem;
+  margin-bottom: 0.1rem;
+}
+
+#skills img{
+  width: 5rem;
+  height: 5rem;
+}
+
+#skills {
+  width: 90vw;
+  margin-bottom: 0;
+}
+#skills div{
+  margin-left: 1rem;
+  width: 100%;
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 0.8rem;
+}
+
+#p-projects {
+  position: relative;
+  bottom: 3rem;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+#blue-bgc {
+  display: none;
+}
+
+#text-and-links {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin-top: 0;
+}
+
+#projects {
+  background-image: url('../build/images/test.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 150%;
+}
+
+#my-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
 }
 
 #my-title {
