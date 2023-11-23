@@ -121,6 +121,149 @@ option, select {
   }
 }
 
+@media (min-width: 320px) and (max-width: 375px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  nav {
+    font-size: 1rem !important;
+  }
+
+  .select-language {
+    background-color: transparent;
+    display: inline-flex;
+    padding: 10px 12px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #D2D2D2;
+    height: 0.6rem;
+    position: relative;
+    left: 0px;
+    top: 7px;
+}
+
+.select-language img {
+  width: 15px;
+  height: 15px;
+}
+
+select, option {
+  font-family: Prociono;
+  height: 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  background-color: #282828;
+}
+
+main {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  position: absolute;
+  top: 2rem;
+  right: -5rem;
+  font-size: 2rem !important;
+}
+
+#web-developer {
+  position: absolute;
+  top: 36rem;
+  left: 7rem;
+  width: 100%;
+  font-size: 1.5rem !important;
+}
+
+#inner-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#text-title {
+  font-size: 2rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#presentation-div {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#p-skills {
+  font-size: 2rem;
+  margin-bottom: 0.1rem;
+}
+
+#skills img{
+  width: 5rem;
+  height: 5rem;
+}
+
+#skills {
+  width: 90vw;
+  margin-bottom: 0;
+}
+#skills div{
+  width: 100%;
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 0.8rem;
+}
+
+#p-projects {
+  font-size: 2rem;
+}
+
+#text-and-links {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin-top: 0;
+}
+
+#my-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+
+}
+
+#my-title {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+#text-contact-h3 {
+  font-size: 2rem;
+}
+
+#social-icons {
+  width: 90vw;
+}
+
+#social-icons div a img {
+  width: 3rem;
+  height: 3rem;
+}
+
+#social-icons div a {
+  font-size: 1rem;
+}
+}
+
 @media (min-width: 375px) and (max-width: 450px) {
   html, body {
     overflow-x: hidden;
