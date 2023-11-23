@@ -819,6 +819,10 @@ option, select {
     width: 100%;
   }
 
+  nav a:last-child {
+    margin-right: 1rem;
+  }
+
   .select-language {
     background-color: transparent;
     display: inline-flex;
@@ -830,7 +834,7 @@ option, select {
     border: 1px solid #D2D2D2;
     height: 0.6rem;
     position: absolute;
-    right: -5rem;
+    right: -4rem;
     top: .3rem;
 }
 
