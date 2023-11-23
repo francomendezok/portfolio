@@ -121,7 +121,7 @@ function translate () {
 
 
     home.textContent === "Home" ? home.textContent = "Inicio" : home.textContent = "Home";
-    about.textContent === "About" ? about.textContent = "Sobre Mi" : about.textContent = "About";
+    about.textContent === "About" ? about.textContent = "Franco" : about.textContent = "About";
     projects.textContent === "Projects" ? projects.textContent = "Proyectos" : projects.textContent = "Projects";
     contact.textContent === "Contact" ? contact.textContent = "Contacto" : contact.textContent = "Contact";
     english.textContent === "English" ? english.textContent = "Ingles" : english.textContent = "English";
