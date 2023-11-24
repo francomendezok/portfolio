@@ -10,7 +10,7 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Urbanist&display=swap');</style>
     <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Prociono&family=Urbanist&display=swap');</style>
 </head>
-<body class="overflow-y-scroll bg-black text-slate-300 w-screen flex flex-col items-center sm:h-screenmax-3xl">
+<body class="overflow-x-hidden bg-black text-slate-300 w-screen flex flex-col items-center sm:h-screenmax-3xl">
     <header class="fixed h-10 bg-transparent w-screen z-20 sm:hidden mx-3xl">
         <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="relative float-right mr-4 mt-4 w-8 h-8 sm:hidden max-3xl">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -76,22 +76,18 @@
             </div>
     </section>
 
-    <section id="projects" class="h-screen w-screen border-2 border-orange-300">
-        <!-- <div class="flex items-center justify-center text-5xl text-slate-300 mt-24">
-            <h3 id="p-projects">Projects</h3>
-        </div>
-        <img id="blue-bgc" class="relative z-10" src="./images/test.webp" alt="" style="height: 100vh; width: 100vw;">
+    <section id="projects" class="h-full w-screen">
+        <h3 id="p-projects" class="text-slate-300 text-4xl text-center">Projects</h3>
+        <img id="blue-bgc" src="./images/test.webp" alt="">
         <div id="my-project" class="flex flex-col items-center justify-center text-center">
-            <img class="rounded-3xl border-2 border-slate-300 transform hover:scale-105 ease-in-out duration-500 cursor-pointer" id="my-img" src="" alt="">
-            <div id="text-and-links">
-                <p class="text-slate-300 text-4xl mt-4 mb-2" id="my-title"></p>
-                <div class="w-96 flex justify-evenly text-slate-300 text-2xl">
-                    <a id="live-repo" target="_blank" href="">Live Repo</a>
-                    <a id="live-web" target="_blank" href="">View Project</a>
-                </div>
+            <img class="w-80 h-80 rounded-3xl border-2 border-slate-700 transform hover:scale-105 ease-in-out duration-500 cursor-pointer xs:w-72 xs:h-72" id="my-img" src="" alt="">
+            <p class="text-3xl mt-4 mb-2" id="my-title"></p>
+             <div>
+                <a id="live-repo" target="_blank" href="">Live Repo</a>
+                <a id="live-web" target="_blank" href="">View Project</a>
             </div>
         </div>
-        <div class="flex justify-center items-center mt-4">
+        <div id="dots" class="flex justify-center items-center mt-4 mb-4">
             <input data-number="0" name="selected" type="radio">
             <input data-number="1" name="selected" type="radio">
             <input data-number="2" name="selected" type="radio">
@@ -99,28 +95,26 @@
             <input data-number="4" name="selected" type="radio">
             <input data-number="5" name="selected" type="radio">
             <input data-number="6" name="selected" type="radio">
-        </div> -->
+        </div>
     </section> 
 
-    <section id="contact" class="h-screen w-screen border-blue-300 border-2">
-        <!-- <div class="pt-20 h-screen w-screen flex flex-col items-center">
-            <h3 id="text-contact-h3" class="text-5xl">Contact</h3>
-            <div id="social-icons" class="w-3/4 flex social-box">
-                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center w-screen justify-evenly mt-8 text-center text-slate-300 text-4xl">
-                    <a target="_blank" href="https://twitter.com/francomendezok"><img class="social w-20 h-20" src="./images/Twitter_white.png" alt="">Twitter</a>
+    <section id="contact" class="text-3xl text-center h-1/2 w-screen">
+        <h3 id="text-contact-h3">Contact</h3>
+        <div id="social-icons" class="grid grid-cols-2">
+                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center justify-center mt-4 text-center text-2xl">
+                    <a class="w-full flex flex-col items-center" target="_blank" href="https://twitter.com/francomendezok"><img class="w-12 h-12" src="./images/Twitter_white.png" alt="">Twitter</a>
                 </div>
-                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center w-screen justify-evenly mt-8 text-center text-slate-300 text-4xl">
-                    <a target="_blank" href="https://linkedin.com/in/franco-mendez-a462b7235"><img class="social w-20 h-20" src="./images/LinkedIN_white.png" alt="">Linkedin</a>
+                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center justify-center mt-4 text-center text-2xl">
+                    <a class="w-full flex flex-col items-center" target="_blank" href="https://linkedin.com/in/franco-mendez-a462b7235"><img class="w-12 h-12" src="./images/LinkedIN_white.png" alt="">Linkedin</a>
                 </div>
-                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center w-screen justify-evenly mt-8 text-center text-slate-300 text-4xl">
-                    <a target="_blank" href="https://github.com/francomendezok"><img class="social w-20 h-20" src="./images/Github_white.png" alt="">Github</a>
+                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center justify-center mt-4 text-center text-2xl">
+                    <a class="w-full flex flex-col items-center" target="_blank" href="https://github.com/francomendezok"><img class="w-12 h-12" src="./images/Github_white.png" alt="">Github</a>
                 </div>
-                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center w-screen justify-evenly mt-8 text-center text-slate-300 text-4xl">
-                    <a target="_blank" href="mailto:francomendezok@gmail.com"><img class="social w-20 h-20" src="./images/Gmail_white.png" alt="">Email</a>
+                <div class="transform hover:scale-110 transition-transform ease-in-out duration-300 hover:text-cyan-300 flex items-center justify-center mt-4 text-center text-2xl">
+                    <a class="w-full flex flex-col items-center" target="_blank" href="mailto:francomendezok@gmail.com"><img class="w-12 h-12" src="./images/Gmail_white.png" alt="">Email</a>
                 </div>
-            </div>
-            <p class="mt-12 mb-4 text-2xl text-slate-300"><span class="text-3xl">2023</span> Franco Mendez</p>
-        </div> -->
+        </div>
+        <p class="mt-4 mb-4 text-2xl"><span class="text-3xl">2023</span> Franco Mendez</p>
     </section> 
 </body>
 </html>

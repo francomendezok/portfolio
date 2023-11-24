@@ -83,8 +83,6 @@ function placeProjects (position) {
     title.textContent = images[position].title;
     github.href = images[position].repo;
     web.href = images[position].web;
-    img.style.width = '36rem';
-    img.style.height = '36rem';
 }
 
 const selectFlag = document.getElementById('select-flag');
@@ -187,5 +185,5 @@ menu.addEventListener('click', () => {
 
 })
 
-// firstInput.click();
+firstInput.click();
 
