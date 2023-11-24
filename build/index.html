@@ -10,29 +10,35 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Urbanist&display=swap');</style>
     <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Prociono&family=Urbanist&display=swap');</style>
 </head>
-<body class="text-slate-200 overflow-x-hidden flex flex-col items-center ">
-    <header class="relative mt-5 h-1/4 bg-transparent w-screen z-10">
-        <nav class="text-3xl w-screen fixed flex justify-evenly items-center">
-            <div id="div-a" class="w-3/4 flex items-center justify-evenly">
+<body class="text-slate-200 w-screen h-screen flex flex-col items-center">
+    <header class="fixed h-10 bg-transparent w-screen z-20">
+        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="relative float-right mr-4 mt-4 w-8 h-8 sm:hidden max-3xl">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+    </header>
+    <nav id="nav" class="flex text-2xl w-screen h-screen items-center flex-col justify-evenly sm:text-3xl sm:h-1/6 max-3xl">
+            <div id="div-a" class="w-screen h-screen flex flex-col items-center justify-evenly sm:flex-row sm:justify-evenly ">
                 <a id="text-home" class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#home">Home</a>
                 <a id="text-about" class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#about">About</a>
                 <a id="text-projects" class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#projects">Projects</a>
                 <a id="text-contact" class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#contact">Contact</a>
+                <div class="rounded-md flex items-center pt-4 pb-4 pl-4 pr-4">
+                    <img class="w-8 h-6 mr-4" id="flag" src="./images/usa.png" alt="Language Flag">
+                    <select id="select-flag" class="text-slate-200 bg-black text-1xl text-center align-middle" name="language" id="language">
+                        <option id="english" class="text-slate-200 bg-black text-1xl text-center align-middle" value="EN">English</option>
+                        <option id="spanish" class="text-slate-200 bg-black text-1xl text-center align-middle" value="SP">Spanish</option>
+                    </select>
+                </div>
             </div>
-            <div class="select-language">
-                <img id="flag" src="./images/usa.png" alt="Language Flag">
-                <select id="select-flag" class="text-slate-200 bg-transparent" name="language" id="language">
-                    <option id="english" class="text-slate-200" value="EN">English</option>
-                    <option id="spanish" class="text-slate-200" value="SP">Spanish</option>
-                </select>
-            </div>
-        </nav>
-    </header>
-    <main id="home" class="bg-center bg-cover h-screen w-screen flex items-center justify-center overflow-x-hidden"> 
+    </nav>
+
+
+
+    <!-- <main id="home" class="bg-center bg-cover h-screen w-screen flex items-center justify-center overflow-x-hidden"> 
         <div class="flex flex-col items-center justify-evenly w-3/4 h-3/4">
             <h1 class="absolute top-20 -translate-x-28 text-7xl">FRANCO MENDEZ</h1>
-            <h2 id="web-developer" class="absolute bottom-24 right-20 text-5xl">WEB DEVELOPER</h2>
-            <img id="gif" src="./images/giphy-round.gif" alt="" class="absolute -z-10 bottom-4 h-3/4">
+            <h2 id="web-developer" class="absolute z-20 bottom-24 right-20 text-5xl">WEB DEVELOPER</h2>
+            <img id="gif" src="../build/images/giphy-round.gif" alt="" class="absolute z-10 bottom-4 h-3/4">
     </main>
     <section id="about" class="pt-20 flex flex-col items-center justify-center">
         <div class="flex flex-col items-center justify-evenly">
@@ -75,7 +81,7 @@
         <div class="flex items-center justify-center text-5xl text-slate-300 mt-24">
             <h3 id="p-projects">Projects</h3>
         </div>
-        <img id="blue-bgc" class="relative -z-50" src="./images/test.webp" alt="" style="height: 100vh; width: 100vw;">
+        <img id="blue-bgc" class="relative z-10" src="./images/test.webp" alt="" style="height: 100vh; width: 100vw;">
         <div id="my-project" class="flex flex-col items-center justify-center text-center">
             <img class="rounded-3xl border-2 border-slate-300 transform hover:scale-105 ease-in-out duration-500 cursor-pointer" id="my-img" src="" alt="">
             <div id="text-and-links">
@@ -115,6 +121,6 @@
             </div>
             <p class="mt-12 mb-4 text-2xl text-slate-300"><span class="text-3xl">2023</span> Franco Mendez</p>
         </div>
-    </section>
+    </section> -->
 </body>
 </html>

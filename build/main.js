@@ -1,3 +1,6 @@
+/* prettier-plugin-tailwind disabled */
+
+
 const images = {
     0: 
     {   
@@ -86,11 +89,11 @@ const english = document.getElementById('english');
 const spanish = document.getElementById('spanish');
 const flag = document.getElementById('flag');
 
-selectFlag.addEventListener('change', () => {
-    if (selectFlag.value === 'EN') flag.src = './images/usa.png';
-    if (selectFlag.value === 'SP') flag.src = './images/arg.png';
-    translate();
-})
+// selectFlag.addEventListener('change', () => {
+//     if (selectFlag.value === 'EN') flag.src = './images/usa.png';
+//     if (selectFlag.value === 'SP') flag.src = './images/arg.png';
+//     translate();
+// })
 
 
 function translate () {
@@ -145,5 +148,15 @@ function translate () {
 
 }
 
-firstInput.click();
+const menu = document.getElementById('menu-icon');
+const nav = document.getElementById('nav');
+
+
+menu.addEventListener('click', () => {
+    nav.classList.toggle('hidden');
+    nav.classList.toggle('flex');
+
+})
+
+// firstInput.click();
 
