@@ -121,7 +121,7 @@ option, select {
   }
 }
 
-@media (min-width: 320px) and (max-width: 375px) {
+/* @media (min-width: 320px) and (max-width: 375px) {
 
   nav {
     position: relative;
@@ -628,5 +628,5 @@ h1 {
 #social-icons div a {
   font-size: 1rem;
 }
-}
+} */
 
