@@ -10,19 +10,19 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Urbanist&display=swap');</style>
     <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Prociono&family=Urbanist&display=swap');</style>
 </head>
-<body class="text-slate-200 w-screen h-screen flex flex-col items-center">
-    <header class="fixed h-10 bg-transparent w-screen z-20">
+<body class="text-slate-300 w-screen h-screen flex flex-col items-center sm:h-screenmax-3xl">
+    <header class="fixed h-10 bg-transparent w-screen z-20 sm:hidden mx-3xl">
         <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="relative float-right mr-4 mt-4 w-8 h-8 sm:hidden max-3xl">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
     </header>
-    <nav id="nav" class="hidden text-2xl w-screen h-screen items-center flex-col justify-evenly sm:text-3xl sm:h-1/6 max-3xl">
-            <div id="div-a" class="w-screen h-screen flex flex-col items-center justify-evenly sm:flex-row sm:justify-evenly ">
+    <nav id="nav" class="hidden text-2xl w-screen h-screen items-center flex-col justify-evenly sm:text-3xl sm:h-1/6 sm:flex max-3xl lg:text-5xl max-3xl">
+            <div id="div-a" class="w-screen h-full flex flex-col items-center justify-evenly sm:flex-row sm:justify-evenly sm:items-center max-3xl ">
                 <a id="text-home" class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#home">Home</a>
                 <a id="text-about" class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#about">About</a>
                 <a id="text-projects" class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#projects">Projects</a>
                 <a id="text-contact" class="transform hover:scale-110 transition-transform ease-in-out duration-300" href="#contact">Contact</a>
-                <div class="rounded-md flex items-center pt-4 pb-4 pl-4 pr-4">
+                <div class="rounded-md flex items-center">
                     <img class="w-8 h-6 mr-4" id="flag" src="./images/usa.png" alt="Language Flag">
                     <select id="select-flag" class="text-slate-200 bg-black text-1xl text-center align-middle" name="language" id="language">
                         <option id="english" class="text-slate-200 bg-black text-1xl text-center align-middle" value="EN">English</option>
@@ -32,10 +32,10 @@
             </div>
     </nav>
 
-    <main id="home" class="flex flex-col justify-center items-center h-screen w-screen"> 
-            <h1 class="relative z-20 left-1 top-10 text-3xl">FRANCO MENDEZ</h1>
-            <img src="./images/giphy-round.gif" alt="" class="relative top-10 z-10 h-3/4 w-3/4">
-            <h2 class="relative z-20 text-2xl">WEB DEVELOPER</h2>
+    <main id="home" class="flex flex-col justify-center items-center h-screen w-screen sm:justify-around max-3xl"> 
+            <h1 class="relative z-20 left-1 top-10 text-3xl sm:top-4 sm:text-7xl max-3xl">FRANCO MENDEZ</h1>
+            <img src="./images/giphy-round.gif" alt="" class="relative top-10 z-10 h-3/4 w-3/4 sm:top-1 max-3xl">
+            <h2 class="relative z-20 text-2xl sm:text-4xl max-3xl">WEB DEVELOPER</h2>
     </main>
     <!-- <section id="about" class="pt-20 flex flex-col items-center justify-center">
         <div class="flex flex-col items-center justify-evenly">
