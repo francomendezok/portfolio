@@ -63,6 +63,9 @@ const images = {
 const inputs = document.querySelectorAll('input[type="radio"]');
 const firstInput = document.querySelector('input[data-number="0"]');
 
+const sections = document.querySelectorAll('nav div a');
+
+
 
 inputs.forEach(radio => {
     radio.addEventListener('click', () => {
@@ -151,13 +154,37 @@ function translate () {
 const menu = document.getElementById('menu-icon');
 const nav = document.getElementById('nav');
 const main = document.getElementById('home');
+const about = document.getElementById('about');
+const skills = document.getElementById('skills');
+const projects = document.getElementById('projects');
+const contact = document.getElementById('contact');
 
 
+
+sections.forEach(a => {
+    a.addEventListener('click', () => {
+        nav.classList.toggle('hidden');
+        nav.classList.toggle('flex');
+    
+        main.classList.toggle('hidden');
+        about.classList.toggle('hidden');
+        skills.classList.toggle('hidden');
+        projects.classList.toggle('hidden');
+        contact.classList.toggle('hidden');
+    
+    })
+})
 
 menu.addEventListener('click', () => {
     nav.classList.toggle('hidden');
     nav.classList.toggle('flex');
+
     main.classList.toggle('hidden');
+    about.classList.toggle('hidden');
+    skills.classList.toggle('hidden');
+    projects.classList.toggle('hidden');
+    contact.classList.toggle('hidden');
+
 })
 
 // firstInput.click();
