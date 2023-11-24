@@ -150,12 +150,14 @@ function translate () {
 
 const menu = document.getElementById('menu-icon');
 const nav = document.getElementById('nav');
+const main = document.getElementById('home');
+
 
 
 menu.addEventListener('click', () => {
     nav.classList.toggle('hidden');
     nav.classList.toggle('flex');
-
+    main.classList.toggle('hidden');
 })
 
 // firstInput.click();
