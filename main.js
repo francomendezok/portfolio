@@ -1,5 +1,3 @@
-/* prettier-plugin-tailwind disabled */
-
 
 const images = {
     0: 
@@ -62,17 +60,22 @@ const images = {
 
 const inputs = document.querySelectorAll('input[type="radio"]');
 const firstInput = document.querySelector('input[data-number="0"]');
-
 const sections = document.querySelectorAll('nav div a');
 
+const menu = document.getElementById('menu-icon');
+const nav = document.getElementById('nav');
+const main = document.getElementById('home');
+const about = document.getElementById('about');
+const skills = document.getElementById('skills');
+const projects = document.getElementById('projects');
+const contact = document.getElementById('contact');
+
+const selectFlag = document.getElementById('select-flag');
+const english = document.getElementById('english');
+const spanish = document.getElementById('spanish');
+const flag = document.getElementById('flag');
 
 
-inputs.forEach(radio => {
-    radio.addEventListener('click', () => {
-        let position = radio.dataset.number;
-        placeProjects(position);
-    })
-})
 function placeProjects (position) {
     const img = document.getElementById('my-img');
     const title = document.getElementById('my-title');
@@ -85,17 +88,16 @@ function placeProjects (position) {
     web.href = images[position].web;
 }
 
-const selectFlag = document.getElementById('select-flag');
-const english = document.getElementById('english');
-const spanish = document.getElementById('spanish');
-const flag = document.getElementById('flag');
-
-// selectFlag.addEventListener('change', () => {
-//     if (selectFlag.value === 'EN') flag.src = './images/usa.png';
-//     if (selectFlag.value === 'SP') flag.src = './images/arg.png';
-//     translate();
-// })
-
+function hide () {
+    if (menu.style.display === 'hidden') {
+        nav.classList.toggle('hidden');    
+        main.classList.toggle('hidden');
+        about.classList.toggle('hidden');
+        skills.classList.toggle('hidden');
+        projects.classList.toggle('hidden');
+        contact.classList.toggle('hidden');
+    }
+}
 
 function translate () {
     const home = document.getElementById('text-home');
@@ -125,7 +127,7 @@ function translate () {
 
 
     home.textContent === "Home" ? home.textContent = "Inicio" : home.textContent = "Home";
-    about.textContent === "About" ? about.textContent = "Franco" : about.textContent = "About";
+    about.textContent === "About" ? about.textContent = "Sobre Mi" : about.textContent = "About";
     projects.textContent === "Projects" ? projects.textContent = "Proyectos" : projects.textContent = "Projects";
     contact.textContent === "Contact" ? contact.textContent = "Contacto" : contact.textContent = "Contact";
     english.textContent === "English" ? english.textContent = "Ingles" : english.textContent = "English";
@@ -146,44 +148,26 @@ function translate () {
     liveWeb.textContent === "View Project" ? liveWeb.textContent = "Web" : liveWeb.textContent = "View Project";
 
     textContact.textContent === "Contact" ? textContact.textContent = "Contacto" : textContact.textContent = "Contact";
-
 }
 
-const menu = document.getElementById('menu-icon');
-const nav = document.getElementById('nav');
-const main = document.getElementById('home');
-const about = document.getElementById('about');
-const skills = document.getElementById('skills');
-const projects = document.getElementById('projects');
-const contact = document.getElementById('contact');
-
-
-
-sections.forEach(a => {
-    a.addEventListener('click', () => {
-        nav.classList.toggle('hidden');
-        nav.classList.toggle('flex');
-    
-        main.classList.toggle('hidden');
-        about.classList.toggle('hidden');
-        skills.classList.toggle('hidden');
-        projects.classList.toggle('hidden');
-        contact.classList.toggle('hidden');
-    
+inputs.forEach(radio => {
+    radio.addEventListener('click', () => {
+        let position = radio.dataset.number;
+        placeProjects(position);
     })
 })
 
-menu.addEventListener('click', () => {
-    nav.classList.toggle('hidden');
-    nav.classList.toggle('flex');
-
-    main.classList.toggle('hidden');
-    about.classList.toggle('hidden');
-    skills.classList.toggle('hidden');
-    projects.classList.toggle('hidden');
-    contact.classList.toggle('hidden');
-
+selectFlag.addEventListener('change', () => {
+    if (selectFlag.value === 'EN') flag.src = './images/usa.png';
+    if (selectFlag.value === 'SP') flag.src = './images/arg.png';
+    hide();
+    translate();
 })
 
-firstInput.click();
+sections.forEach(a => {
+    a.addEventListener('click', hide)
+})
+menu.addEventListener('click', hide)
 
+
+firstInput.click();
