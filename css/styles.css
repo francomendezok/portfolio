@@ -36,8 +36,8 @@ body {
 
 
 input[type="radio"]:hover {
-  cursor: pointer !important;
-  transform: scale(1.5) !important;
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 
