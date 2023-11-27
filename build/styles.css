@@ -497,6 +497,9 @@ video {
 .top-10 {
   top: 2.5rem;
 }
+.top-0 {
+  top: 0px;
+}
 .z-10 {
   z-index: 10;
 }
@@ -566,6 +569,9 @@ video {
 .h-screen {
   height: 100vh;
 }
+.h-12 {
+  height: 3rem;
+}
 .w-20 {
   width: 5rem;
 }
@@ -589,6 +595,9 @@ video {
 }
 .w-screen {
   width: 100vw;
+}
+.w-12 {
+  width: 3rem;
 }
 .scale-110 {
   --tw-scale-x: 1.1;
@@ -905,6 +914,10 @@ input[type="radio"]:hover {
     margin-left: 1rem;
   }
 
+  .md\:mr-4 {
+    margin-right: 1rem;
+  }
+
   .md\:mt-10 {
     margin-top: 2.5rem;
   }
@@ -923,14 +936,6 @@ input[type="radio"]:hover {
 
   .md\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .md\:ml-0 {
-    margin-left: 0px;
-  }
-
-  .md\:mr-4 {
-    margin-right: 1rem;
   }
 
   .md\:flex {
@@ -957,6 +962,10 @@ input[type="radio"]:hover {
     height: 100%;
   }
 
+  .md\:h-24 {
+    height: 6rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -979,6 +988,10 @@ input[type="radio"]:hover {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-24 {
+    width: 6rem;
   }
 
   .md\:transform {
@@ -1038,16 +1051,16 @@ input[type="radio"]:hover {
 
 @media (min-width: 1024px) {
 
-  .lg\:relative {
-    position: relative;
-  }
-
-  .lg\:-left-40 {
-    left: -10rem;
+  .lg\:-left-24 {
+    left: -6rem;
   }
 
   .lg\:left-40 {
     left: 10rem;
+  }
+
+  .lg\:top-10 {
+    top: 2.5rem;
   }
 
   .lg\:top-24 {
@@ -1058,16 +1071,20 @@ input[type="radio"]:hover {
     top: 8rem;
   }
 
-  .lg\:-left-36 {
-    left: -9rem;
-  }
-
-  .lg\:-left-24 {
-    left: -6rem;
+  .lg\:top-96 {
+    top: 24rem;
   }
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .lg\:mt-8 {
+    margin-top: 2rem;
   }
 
   .lg\:h-1\/2 {
@@ -1080,6 +1097,10 @@ input[type="radio"]:hover {
 
   .lg\:justify-evenly {
     justify-content: space-evenly;
+  }
+
+  .lg\:overflow-visible {
+    overflow: visible;
   }
 
   .lg\:text-2xl {
