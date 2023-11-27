@@ -89,7 +89,7 @@ function placeProjects (position) {
 }
 
 function hide () {
-    if (menu.style.display === 'hidden') {
+    if (window.innerWidth < 768) {
         nav.classList.toggle('hidden');    
         main.classList.toggle('hidden');
         about.classList.toggle('hidden');
@@ -167,7 +167,9 @@ selectFlag.addEventListener('change', () => {
 sections.forEach(a => {
     a.addEventListener('click', hide)
 })
-menu.addEventListener('click', hide)
+menu.addEventListener('click', () => {
+    hide();
+})
 
 
 firstInput.click();
